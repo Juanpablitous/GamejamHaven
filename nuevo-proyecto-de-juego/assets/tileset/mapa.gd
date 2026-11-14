@@ -8,9 +8,8 @@ func _physics_process(delta: float) -> void:
 	if (tiempo < 1000):
 			tiempo = tiempo +1
 	else: 
-		while i < 50:
 			_atak(0)
-			i = i+1
+
 	
 # Called when the node enters the scene tree for the first time.
 func _atak(delta: float) -> void:
