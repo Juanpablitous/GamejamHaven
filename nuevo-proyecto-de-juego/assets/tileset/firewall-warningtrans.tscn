@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bndg0xr1hwsfx"]
+
+[ext_resource type="Script" uid="uid://by6y5ncjm8lxf" path="res://area_2d.gd" id="1_g5qmy"]
+[ext_resource type="Texture2D" uid="uid://bnf8rr2cjyknt" path="res://assets/firewalls.png" id="2_1oba6"]
+[ext_resource type="Texture2D" uid="uid://c7fs33qhk8kem" path="res://assets/warning.png" id="3_i7ma1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbol8"]
+size = Vector2(110, 66)
+
+[node name="Node2D" type="Node2D" unique_id=1564317787]
+position = Vector2(208, 102)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=880565048]
+script = ExtResource("1_g5qmy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1277278794]
+position = Vector2(2, 23)
+shape = SubResource("RectangleShape2D_pbol8")
+
+[node name="Firewalls" type="Sprite2D" parent="Area2D" unique_id=1972246040]
+visible = false
+position = Vector2(0, -2)
+texture = ExtResource("2_1oba6")
+
+[node name="Warning" type="Sprite2D" parent="Area2D" unique_id=890646040]
+position = Vector2(0, -8)
+texture = ExtResource("3_i7ma1")

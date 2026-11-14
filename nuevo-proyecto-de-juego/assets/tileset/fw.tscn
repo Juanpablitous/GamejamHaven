@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dt2541leqghti"]
+
+[ext_resource type="Texture2D" uid="uid://bnf8rr2cjyknt" path="res://assets/firewalls.png" id="1_31x8p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbol8"]
+size = Vector2(100.5, 118)
+
+[node name="Node2D" type="Node2D" unique_id=1570070394]
+
+[node name="Firewalls" type="Sprite2D" parent="." unique_id=198978740]
+position = Vector2(155, 101)
+texture = ExtResource("1_31x8p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1337371597]
+position = Vector2(153.75, 100)
+shape = SubResource("RectangleShape2D_pbol8")
