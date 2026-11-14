@@ -2,7 +2,23 @@
 
 [ext_resource type="TileSet" uid="uid://dc528rf0bpmxu" path="res://assets/tileset/tilestenegro.tres" id="1_k1jda"]
 [ext_resource type="Script" uid="uid://dsdgy26lsne2c" path="res://escenas/mapa.gd" id="1_m1ys1"]
-[ext_resource type="PackedScene" uid="uid://bndg0xr1hwsfx" path="res://escenas/firewall-warningtrans.tscn" id="3_mr608"]
+[ext_resource type="PackedScene" uid="uid://b4xbssx1o1fhn" path="res://escenas/ball.tscn" id="3_hdjqb"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_pbol8"]
+a = Vector2(1710, -979)
+b = Vector2(-148, 14)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_r0xwl"]
+a = Vector2(-20, 1221)
+b = Vector2(-1678, 267)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_vac8s"]
+a = Vector2(-8, 1203)
+b = Vector2(1760, 181)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_dyibt"]
+a = Vector2(17, -699)
+b = Vector2(1717, 328)
 
 [node name="Node2D2" type="Node2D" unique_id=1626393860]
 script = ExtResource("1_m1ys1")
@@ -30,8 +46,20 @@ position = Vector2(-7936, 12999)
 scale = Vector2(5.2708097, 7.0709424)
 zoom = Vector2(0.2, 0.2)
 
-[node name="Node2D fw" parent="." unique_id=1564317787 instance=ExtResource("3_mr608")]
-position = Vector2(55, 77)
+[node name="Ball" parent="." unique_id=202168182 instance=ExtResource("3_hdjqb")]
+position = Vector2(-9, 630)
 
-[node name="Node2D" parent="." unique_id=69027085 instance=ExtResource("3_mr608")]
-position = Vector2(-33, 248)
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1757972648]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=59929108]
+position = Vector2(-1561, 311)
+shape = SubResource("SegmentShape2D_pbol8")
+
+[node name="CollisionShape2D22323" type="CollisionShape2D" parent="StaticBody2D" unique_id=1970085126]
+shape = SubResource("SegmentShape2D_r0xwl")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=670227445]
+shape = SubResource("SegmentShape2D_vac8s")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=325261461]
+shape = SubResource("SegmentShape2D_dyibt")

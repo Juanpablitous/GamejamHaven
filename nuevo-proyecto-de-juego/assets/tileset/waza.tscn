@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dgbyduel0k6eb"]
+
+[ext_resource type="Script" uid="uid://7m40cyk7e7pq" path="res://assets/tileset/area_2d.gd" id="1_dj8q6"]
+[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://assets/icon.svg" id="1_vorxp"]
+[ext_resource type="Script" uid="uid://c7e800e5pp0hl" path="res://assets/tileset/character_body_2d.gd" id="2_l6cdh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbol8"]
+size = Vector2(179, 171)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pbol8"]
+radius = 60.0
+height = 124.0
+
+[node name="Node2D" type="Node2D" unique_id=1153973771]
+position = Vector2(103, 73)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1450221947]
+script = ExtResource("1_dj8q6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1618220566]
+position = Vector2(1.5, 0.5)
+shape = SubResource("RectangleShape2D_pbol8")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=681578187]
+script = ExtResource("2_l6cdh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=104368900]
+shape = SubResource("CapsuleShape2D_pbol8")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1271326288]
+texture = ExtResource("1_vorxp")
