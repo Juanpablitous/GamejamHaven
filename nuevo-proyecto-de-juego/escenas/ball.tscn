@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b4xbssx1o1fhn"]
+
+[ext_resource type="Script" uid="uid://yg2ivip6xga4" path="res://escenas/ballLogic.gd" id="1_gv8hv"]
+[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://assets/icon.svg" id="1_she5b"]
+[ext_resource type="Script" uid="uid://cmtkwnin6env4" path="res://escenas/ball.gd" id="2_5sohv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbol8"]
+size = Vector2(128, 127)
+
+[node name="Ball" type="CharacterBody2D" unique_id=202168182]
+script = ExtResource("1_gv8hv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=421095354]
+texture = ExtResource("1_she5b")
+script = ExtResource("2_5sohv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1287740581]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_pbol8")

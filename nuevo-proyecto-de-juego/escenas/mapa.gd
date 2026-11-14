@@ -2,11 +2,12 @@ extends Node2D
 var firewall = preload("res://escenas/firewall-warningtrans.tscn")
 var tiempo = 0
 var i = 0
+@onready var ball: Node2D = $Ball
 
 func _physics_process(delta: float) -> void:
 	_atak(500)
 	
-# Called when the node enters the scene tree for the first time.
+	
 func _atak(delta: float) -> void:
 		if (tiempo < 1000):
 			tiempo = tiempo +1
@@ -16,3 +17,4 @@ func _atak(delta: float) -> void:
 			fw.position.y = randi_range(-300,300)
 			add_child(fw)
 			tiempo = 0
+			
