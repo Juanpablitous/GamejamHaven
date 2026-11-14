@@ -8,8 +8,8 @@ texture_region_size = Vector2i(111, 128)
 0:0/next_alternative_id = 2
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -29)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 32, -59, 61, 1, 96, 58, 60)
 0:0/1 = 1
-0:0/1/texture_origin = Vector2i(0, -30)
 0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(0, 32, -59, 61, 1, 96, 58, 60)
 
 [resource]

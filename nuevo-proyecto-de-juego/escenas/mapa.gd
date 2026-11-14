@@ -1,15 +1,10 @@
 extends Node2D
-var firewall = preload("res://assets/tileset/firewall-warningtrans.tscn")
+var firewall = preload("res://escenas/firewall-warningtrans.tscn")
 var tiempo = 0
 var i = 0
 
 func _physics_process(delta: float) -> void:
-	var a = 1
-	if (tiempo < 1000):
-			tiempo = tiempo +1
-	else: 
-			_atak(0)
-
+	_atak(500)
 	
 # Called when the node enters the scene tree for the first time.
 func _atak(delta: float) -> void:

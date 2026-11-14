@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://0vu3c84pebxj"]
 
 [ext_resource type="TileSet" uid="uid://dc528rf0bpmxu" path="res://assets/tileset/tilestenegro.tres" id="1_k1jda"]
-[ext_resource type="Script" path="res://assets/tileset/mapa.gd" id="1_m1ys1"]
-[ext_resource type="PackedScene" path="res://assets/tileset/firewall-warningtrans.tscn" id="3_mr608"]
+[ext_resource type="Script" uid="uid://dsdgy26lsne2c" path="res://escenas/mapa.gd" id="1_m1ys1"]
+[ext_resource type="PackedScene" uid="uid://bndg0xr1hwsfx" path="res://escenas/firewall-warningtrans.tscn" id="3_mr608"]
 
 [node name="Node2D2" type="Node2D" unique_id=1626393860]
 script = ExtResource("1_m1ys1")
