@@ -8,7 +8,7 @@ var tiempo = 0
 
 # Called when the node enters the scene tree for the first time.
 func _physics_process(delta: float) -> void:
-	if (tiempo < 100):
+	if (tiempo < 150):
 		tiempo = tiempo +1
 		firewalls.visible = false
 		warning.visible = true

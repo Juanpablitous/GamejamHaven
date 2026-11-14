@@ -18,7 +18,6 @@ position = Vector2(2, 23)
 shape = SubResource("RectangleShape2D_pbol8")
 
 [node name="Firewalls" type="Sprite2D" parent="Area2D" unique_id=1972246040]
-visible = false
 position = Vector2(0, -2)
 texture = ExtResource("2_1oba6")
 

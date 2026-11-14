@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://b4mtvck3a8sjl" path="res://triple_t.wav" id="4_m1ys1"]
 [ext_resource type="Texture2D" uid="uid://dsjgdcafmivsj" path="res://escenas/sahur.png" id="5_gy6r4"]
 [ext_resource type="PackedScene" uid="uid://dq77mogkrb1re" path="res://escenas/ball.tscn" id="6_cp4h1"]
+[ext_resource type="PackedScene" uid="uid://bndg0xr1hwsfx" path="res://escenas/firewall-warningtrans.tscn" id="7_if818"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gy6r4"]
 size = Vector2(344, 424)
@@ -107,9 +108,6 @@ position = Vector2(-1920, 29127)
 tile_map_data = PackedByteArray("AAA//hz+AAAAAAAAAQA//h3+AAAAAAAAAQA//h7+AAAAAAAAAQA//h/+AAAAAAAAAQA//iD+AAAAAAAAAQA//iH+AAAAAAAAAQA//iL+AAAAAAAAAQA//iP+AAAAAAAAAQA//iT+AAAAAAAAAQA//iX+AAAAAAAAAQA//ib+AAAAAAAAAQA//if+AAAAAAAAAQA//ij+AAAAAAAAAQA//in+AAAAAAAAAQA//ir+AAAAAAAAAQA//iv+AAAAAAAAAQA//iz+AAAAAAAAAQA//i3+AAAAAAAAAQA//i7+AAAAAAAAAQA//i/+AAAAAAAAAQA//jD+AAAAAAAAAQA//jH+AAAAAAAAAQA//jL+AAAAAAAAAQA//jP+AAAAAAAAAQA//jT+AAAAAAAAAQA//jX+AAAAAAAAAQA//jb+AAAAAAAAAQA//jf+AAAAAAAAAQA//jj+AAAAAAAAAQA//jn+AAAAAAAAAQA//jr+AAAAAAAAAQA//jv+AAAAAAAAAQA//jz+AAAAAAAAAQBA/hz+AAAAAAAAAQBB/hz+AAAAAAAAAQBC/hz+AAAAAAAAAQBD/hz+AAAAAAAAAQBE/hz+AAAAAAAAAQBF/hz+AAAAAAAAAQBG/hz+AAAAAAAAAQBH/hz+AAAAAAAAAQBI/hz+AAAAAAAAAQBJ/hz+AAAAAAAAAQBK/hz+AAAAAAAAAQBL/hz+AAAAAAAAAQBM/hz+AAAAAAAAAQBN/hz+AAAAAAAAAQBO/hz+AAAAAAAAAQBP/hz+AAAAAAAAAQBQ/hz+AAAAAAAAAQBR/hz+AAAAAAAAAQBS/hz+AAAAAAAAAQBT/hz+AAAAAAAAAQBU/hz+AAAAAAAAAQBV/hz+AAAAAAAAAQBW/hz+AAAAAAAAAQBX/hz+AAAAAAAAAQBY/hz+AAAAAAAAAQBZ/hz+AAAAAAAAAQBa/hz+AAAAAAAAAQBb/hz+AAAAAAAAAQBc/hz+AAAAAAAAAQBd/hz+AAAAAAAAAQBA/jz+AAAAAAAAAQBB/jz+AAAAAAAAAQBC/jz+AAAAAAAAAQBD/jz+AAAAAAAAAQBE/jz+AAAAAAAAAQBF/jz+AAAAAAAAAQBG/jz+AAAAAAAAAQBH/jz+AAAAAAAAAQBI/jz+AAAAAAAAAQBJ/jz+AAAAAAAAAQBK/jz+AAAAAAAAAQBL/jz+AAAAAAAAAQBM/jz+AAAAAAAAAQBN/jz+AAAAAAAAAQBO/jz+AAAAAAAAAQBP/jz+AAAAAAAAAQBQ/jz+AAAAAAAAAQBR/jz+AAAAAAAAAQBS/jz+AAAAAAAAAQBT/jz+AAAAAAAAAQBU/jz+AAAAAAAAAQBV/jz+AAAAAAAAAQBW/jz+AAAAAAAAAQBX/jz+AAAAAAAAAQBY/jz+AAAAAAAAAQBZ/jz+AAAAAAAAAQBa/jz+AAAAAAAAAQBb/jz+AAAAAAAAAQBc/jz+AAAAAAAAAQBd/jz+AAAAAAAAAQBd/h3+AAAAAAAAAQBd/h7+AAAAAAAAAQBd/h/+AAAAAAAAAQBd/iD+AAAAAAAAAQBd/iH+AAAAAAAAAQBd/iL+AAAAAAAAAQBd/iP+AAAAAAAAAQBd/iT+AAAAAAAAAQBd/iX+AAAAAAAAAQBd/ib+AAAAAAAAAQBd/if+AAAAAAAAAQBd/ij+AAAAAAAAAQBd/in+AAAAAAAAAQBd/ir+AAAAAAAAAQBd/iv+AAAAAAAAAQBd/iz+AAAAAAAAAQBd/i3+AAAAAAAAAQBd/i7+AAAAAAAAAQBd/i/+AAAAAAAAAQBd/jD+AAAAAAAAAQBd/jH+AAAAAAAAAQBd/jL+AAAAAAAAAQBd/jP+AAAAAAAAAQBd/jT+AAAAAAAAAQBd/jX+AAAAAAAAAQBd/jb+AAAAAAAAAQBd/jf+AAAAAAAAAQBd/jj+AAAAAAAAAQBd/jn+AAAAAAAAAQBd/jr+AAAAAAAAAQBd/jv+AAAAAAAAAQA=")
 tile_set = ExtResource("1_k1jda")
 
-[node name="Ataques" type="TileMapLayer" parent="Tilemap" unique_id=2015591224]
-position = Vector2(-7936, 12999)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=326331095]
 scale = Vector2(5.2708097, 7.0709424)
 zoom = Vector2(0.2, 0.2)
@@ -118,7 +116,7 @@ zoom = Vector2(0.2, 0.2)
 position = Vector2(55, 77)
 
 [node name="Node2D" parent="." unique_id=69027085 instance=ExtResource("3_mr608")]
-position = Vector2(-33, 248)
+position = Vector2(381, 434)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1336283839]
 stream = ExtResource("4_m1ys1")
@@ -157,3 +155,6 @@ shape = SubResource("SegmentShape2D_6d5wt")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=956963491]
 shape = SubResource("SegmentShape2D_r2los")
+
+[node name="Node2D2" parent="." unique_id=1502788882 instance=ExtResource("7_if818")]
+position = Vector2(589, 536)

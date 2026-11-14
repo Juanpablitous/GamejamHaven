@@ -5,10 +5,6 @@ var i = 0
 @onready var ball: Node2D = $Ball
 
 func _physics_process(delta: float) -> void:
-	_atak(500)
-	
-	
-func _atak(delta: float) -> void:
 		if (tiempo < 1000):
 			tiempo = tiempo +1
 		else:
@@ -17,4 +13,5 @@ func _atak(delta: float) -> void:
 			fw.position.y = randi_range(-300,300)
 			add_child(fw)
 			tiempo = 0
+	
 			
