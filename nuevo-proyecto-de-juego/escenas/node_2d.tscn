@@ -2,23 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://dc528rf0bpmxu" path="res://assets/tileset/tilestenegro.tres" id="1_k1jda"]
 [ext_resource type="Script" uid="uid://dsdgy26lsne2c" path="res://escenas/mapa.gd" id="1_m1ys1"]
-[ext_resource type="PackedScene" uid="uid://b4xbssx1o1fhn" path="res://escenas/ball.tscn" id="3_hdjqb"]
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_pbol8"]
-a = Vector2(1710, -979)
-b = Vector2(-148, 14)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_r0xwl"]
-a = Vector2(-20, 1221)
-b = Vector2(-1678, 267)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_vac8s"]
-a = Vector2(-8, 1203)
-b = Vector2(1760, 181)
-
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_dyibt"]
-a = Vector2(17, -699)
-b = Vector2(1717, 328)
+[ext_resource type="PackedScene" uid="uid://dq77mogkrb1re" path="res://escenas/ball.tscn" id="3_hdjqb"]
 
 [node name="Node2D2" type="Node2D" unique_id=1626393860]
 script = ExtResource("1_m1ys1")
@@ -39,27 +23,9 @@ position = Vector2(-1920, 29127)
 tile_map_data = PackedByteArray("AAA//hz+AAAAAAAAAQA//h3+AAAAAAAAAQA//h7+AAAAAAAAAQA//h/+AAAAAAAAAQA//iD+AAAAAAAAAQA//iH+AAAAAAAAAQA//iL+AAAAAAAAAQA//iP+AAAAAAAAAQA//iT+AAAAAAAAAQA//iX+AAAAAAAAAQA//ib+AAAAAAAAAQA//if+AAAAAAAAAQA//ij+AAAAAAAAAQA//in+AAAAAAAAAQA//ir+AAAAAAAAAQA//iv+AAAAAAAAAQA//iz+AAAAAAAAAQA//i3+AAAAAAAAAQA//i7+AAAAAAAAAQA//i/+AAAAAAAAAQA//jD+AAAAAAAAAQA//jH+AAAAAAAAAQA//jL+AAAAAAAAAQA//jP+AAAAAAAAAQA//jT+AAAAAAAAAQA//jX+AAAAAAAAAQA//jb+AAAAAAAAAQA//jf+AAAAAAAAAQA//jj+AAAAAAAAAQA//jn+AAAAAAAAAQA//jr+AAAAAAAAAQA//jv+AAAAAAAAAQA//jz+AAAAAAAAAQBA/hz+AAAAAAAAAQBB/hz+AAAAAAAAAQBC/hz+AAAAAAAAAQBD/hz+AAAAAAAAAQBE/hz+AAAAAAAAAQBF/hz+AAAAAAAAAQBG/hz+AAAAAAAAAQBH/hz+AAAAAAAAAQBI/hz+AAAAAAAAAQBJ/hz+AAAAAAAAAQBK/hz+AAAAAAAAAQBL/hz+AAAAAAAAAQBM/hz+AAAAAAAAAQBN/hz+AAAAAAAAAQBO/hz+AAAAAAAAAQBP/hz+AAAAAAAAAQBQ/hz+AAAAAAAAAQBR/hz+AAAAAAAAAQBS/hz+AAAAAAAAAQBT/hz+AAAAAAAAAQBU/hz+AAAAAAAAAQBV/hz+AAAAAAAAAQBW/hz+AAAAAAAAAQBX/hz+AAAAAAAAAQBY/hz+AAAAAAAAAQBZ/hz+AAAAAAAAAQBa/hz+AAAAAAAAAQBb/hz+AAAAAAAAAQBc/hz+AAAAAAAAAQBd/hz+AAAAAAAAAQBA/jz+AAAAAAAAAQBB/jz+AAAAAAAAAQBC/jz+AAAAAAAAAQBD/jz+AAAAAAAAAQBE/jz+AAAAAAAAAQBF/jz+AAAAAAAAAQBG/jz+AAAAAAAAAQBH/jz+AAAAAAAAAQBI/jz+AAAAAAAAAQBJ/jz+AAAAAAAAAQBK/jz+AAAAAAAAAQBL/jz+AAAAAAAAAQBM/jz+AAAAAAAAAQBN/jz+AAAAAAAAAQBO/jz+AAAAAAAAAQBP/jz+AAAAAAAAAQBQ/jz+AAAAAAAAAQBR/jz+AAAAAAAAAQBS/jz+AAAAAAAAAQBT/jz+AAAAAAAAAQBU/jz+AAAAAAAAAQBV/jz+AAAAAAAAAQBW/jz+AAAAAAAAAQBX/jz+AAAAAAAAAQBY/jz+AAAAAAAAAQBZ/jz+AAAAAAAAAQBa/jz+AAAAAAAAAQBb/jz+AAAAAAAAAQBc/jz+AAAAAAAAAQBd/jz+AAAAAAAAAQBd/h3+AAAAAAAAAQBd/h7+AAAAAAAAAQBd/h/+AAAAAAAAAQBd/iD+AAAAAAAAAQBd/iH+AAAAAAAAAQBd/iL+AAAAAAAAAQBd/iP+AAAAAAAAAQBd/iT+AAAAAAAAAQBd/iX+AAAAAAAAAQBd/ib+AAAAAAAAAQBd/if+AAAAAAAAAQBd/ij+AAAAAAAAAQBd/in+AAAAAAAAAQBd/ir+AAAAAAAAAQBd/iv+AAAAAAAAAQBd/iz+AAAAAAAAAQBd/i3+AAAAAAAAAQBd/i7+AAAAAAAAAQBd/i/+AAAAAAAAAQBd/jD+AAAAAAAAAQBd/jH+AAAAAAAAAQBd/jL+AAAAAAAAAQBd/jP+AAAAAAAAAQBd/jT+AAAAAAAAAQBd/jX+AAAAAAAAAQBd/jb+AAAAAAAAAQBd/jf+AAAAAAAAAQBd/jj+AAAAAAAAAQBd/jn+AAAAAAAAAQBd/jr+AAAAAAAAAQBd/jv+AAAAAAAAAQA=")
 tile_set = ExtResource("1_k1jda")
 
-[node name="Ataques" type="TileMapLayer" parent="Tilemap" unique_id=2015591224]
-position = Vector2(-7936, 12999)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=326331095]
 scale = Vector2(5.2708097, 7.0709424)
 zoom = Vector2(0.2, 0.2)
 
 [node name="Ball" parent="." unique_id=202168182 instance=ExtResource("3_hdjqb")]
 position = Vector2(-9, 630)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1757972648]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=59929108]
-position = Vector2(-1561, 311)
-shape = SubResource("SegmentShape2D_pbol8")
-
-[node name="CollisionShape2D22323" type="CollisionShape2D" parent="StaticBody2D" unique_id=1970085126]
-shape = SubResource("SegmentShape2D_r0xwl")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=670227445]
-shape = SubResource("SegmentShape2D_vac8s")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=325261461]
-shape = SubResource("SegmentShape2D_dyibt")

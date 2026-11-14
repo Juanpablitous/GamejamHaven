@@ -41,7 +41,7 @@ region = Rect2(40, 40, 40, 40)
 [sub_resource type="SpriteFrames" id="SpriteFrames_hjfdl"]
 animations = [{
 "frames": [],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -67,12 +67,27 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ewn6p")
 }],
-"loop": true,
+"loop": 1,
 "name": &"new_animation",
 "speed": 5.0
 }]
 
-[node name="Node2D2" type="Node2D" unique_id=1626393860]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cp4h1"]
+size = Vector2(2034.991, 110.24881)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_if818"]
+a = Vector2(-20, 1221)
+b = Vector2(-1678, 267)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_6d5wt"]
+a = Vector2(-8, 1203)
+b = Vector2(1760, 181)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_r2los"]
+a = Vector2(17, -699)
+b = Vector2(1717, 328)
+
+[node name="Main" type="Node2D" unique_id=1626393860]
 position = Vector2(-691, -288)
 script = ExtResource("1_m1ys1")
 metadata/_edit_horizontal_guides_ = [317.0, 626.0, -84.0, -151.0]
@@ -126,4 +141,19 @@ animation = &"new_animation"
 [node name="Ball" parent="." unique_id=202168182 instance=ExtResource("6_cp4h1")]
 position = Vector2(-612, 530)
 scale = Vector2(1.8399987, 1.9199997)
-metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1817747772]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1965467291]
+position = Vector2(-829.83124, -219.54344)
+rotation = -0.5287497
+shape = SubResource("RectangleShape2D_cp4h1")
+
+[node name="CollisionShape2D22323" type="CollisionShape2D" parent="StaticBody2D" unique_id=369718267]
+shape = SubResource("SegmentShape2D_if818")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=393377599]
+shape = SubResource("SegmentShape2D_6d5wt")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=956963491]
+shape = SubResource("SegmentShape2D_r2los")

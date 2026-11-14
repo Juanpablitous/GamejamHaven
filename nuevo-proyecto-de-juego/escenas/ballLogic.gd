@@ -1,10 +1,10 @@
 
 extends CharacterBody2D
 
-@export var speed = 300.0
-@export var dash_speed = 900.0
+@export var speed = 3000.0
+@export var dash_speed = 1900.0
 @export var dash_duration = 0.2
-@export var bounce_force = 900.0
+@export var bounce_force = 1900.0
 
 var is_dashing = false
 var dash_timer = 0.0
